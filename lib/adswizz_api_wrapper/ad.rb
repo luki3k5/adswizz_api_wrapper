@@ -6,7 +6,13 @@ class Ad
 
     @ad_system   = ad_details.ad_system
     @ad_title    = ad_details.ad_title
-    @creatives   = ad_details.linear_creatives.each { |c| Creative.new(ad_details.linear_creatives, :linear) }
+    @linear_creatives = assign_creatives(ad_details.linear_creatives)
+  end
+
+  def assign_creatives(linear_creatives)
+    lc = []
+    linear_creatives.each { |c| lc << Creative.new(c, :linear) }
+    lc
   end
 
   def to_s

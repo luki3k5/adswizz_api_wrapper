@@ -31,9 +31,9 @@ describe ApiCaller do
         end
 
         it 'has LinearCreatives' do
-          expect(subject.creatives).to eq('Adswizz')
+          expect(subject.linear_creatives.class).to eq(Array)
+          expect(subject.linear_creatives.first.class).to eq(Creative)
         end
-
       end
     end
 
