@@ -30,6 +30,10 @@ describe ApiCaller do
           expect(subject.ad_system).to eq('Adswizz')
         end
 
+        it 'has LinearCreatives' do
+          expect(subject.creatives).to eq('Adswizz')
+        end
+
       end
     end
 
