@@ -7,6 +7,7 @@ class Ad
     @ad_system   = ad_details.ad_system
     @ad_title    = ad_details.ad_title
     @description = ad_details.description
+    @creatives   = ad_details.creatives.each { |c| Creative.new(ad_details.creatives) }
   end
 
   def to_s
