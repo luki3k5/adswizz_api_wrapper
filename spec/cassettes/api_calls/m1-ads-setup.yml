@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://aupeo_user:aupeo123@demo.adswizz.com/www/delivery/swfIndex.php?protocolVersion=2.0&reqType=AdsSetup&zoneId=2409
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Adsrv:
+      - i-b24bc6ff
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Content-Type:
+      - application/xml; charset=UTF-8
+      Date:
+      - Thu, 26 Sep 2013 12:21:16 GMT
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      P3p:
+      - policyref="demo.adswizz.com/docs/adswizz_adserver.htm",  CP="CUR OUR NAV INT
+        IND"
+      Pragma:
+      - no-cache
+      Server:
+      - lighttpd/1.4.22
+      Set-Cookie:
+      - OAGEO=DE%7C16%7CBerlin%7C10117%7C52.5161%7C13.3874%7C%7C%7C%7C%7C%7C; path=/;
+        domain=demo.adswizz.com
+      - OAID=47875fc615f12b161ee804972a119eb3; expires=Fri, 26-Sep-2014 12:21:16 GMT;
+        path=/; domain=.adswizz.com
+      - OA_NO_SEQ=1; path=/; domain=demo.adswizz.com
+      - OA_SEQ_ZONES=2409; path=/; domain=demo.adswizz.com
+      - PHPSESSID=efb7202b22b885ec2f7b4e0313d14749; path=/
+      - adswizz_cookies_test=1; expires=Thu, 26-Sep-2013 12:21:17 GMT; path=/; domain=demo.adswizz.com
+      - adswizz_cookies_test=deleted; expires=Wed, 26-Sep-2012 12:21:15 GMT; path=/;
+        domain=demo.adswizz.com
+      - adswizz_cookies_test=deleted; expires=Wed, 26-Sep-2012 12:21:15 GMT; path=/;
+        domain=demo.adswizz.com
+      - sessionId=efb7202b22b885ec2f7b4e0313d14749; path=/; domain=demo.adswizz.com
+      X-Powered-By:
+      - PHP/5.2.10-2ubuntu6.4
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><VAST version=\"2.0\">\r\n\t<Ad
+        id=\"AdswizzAd11421\">\r\n\t\t<InLine>\r\n\t\t\t<AdSystem>Adswizz</AdSystem>\r\n\t\t\t<AdTitle>Ad
+        One</AdTitle>\r\n\t\t\t<Description>Ad One</Description>\r\n\t\t\t<Impression
+        id=\"AdswizzImpression\"><![CDATA[http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayStarted&protocolVersion=2.0&adId=11421&zoneId=2409&viewKey=1380198076.54&tagsArray=&sessionId=efb7202b22b885ec2f7b4e0313d14749]]></Impression>\r\n\t\t\t\r\n\t\t\t<Creatives>\r\n\t\t\t\t<Creative
+        sequence=\"1\">\r\n\t\t\t\t\t<Linear>\r\n\t\t\t\t\t\t<Duration>00:02:50</Duration><VideoClicks><ClickThrough><![CDATA[http://demo.adswizz.com/www/delivery/ck.php?oaparams=2__bannerid=11421__zoneid=2409__cb=73315a0cd6__viewkey=1380198076.54__maxdest=]]></ClickThrough><CustomClick><![CDATA[http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsClicked&protocolVersion=2.0&clickX=[clickX]&clickY=[clickY]&time=[timestamp]&adId=11421&visitorCookieSend=47875fc615f12b161ee804972a119eb3&zoneId=2409&viewKey=1380198076.54&tagsArray=&sessionId=efb7202b22b885ec2f7b4e0313d14749&cb=[random]]]></CustomClick></VideoClicks>\r\n\t\t\t\t\t\t<MediaFiles>\r\n\t\t\t\t\t\t\t<MediaFile
+        delivery=\"progressive\" bitrate=\"192\" width=\"0\" height=\"0\" type=\"audio/mpeg\"><![CDATA[http://delivery-s3.adswizz.com/demo/maid_with_the_flaxen_hair_ad_522986bc37c9c_1378453180.mp3]]></MediaFile>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t</MediaFiles>\r\n\t\t\t\t\t\t<TrackingEvents>\n\t\t\t\t\t\t\t<Tracking
+        event=\"start\"><![CDATA[http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=0&time=0&protocolVersion=2.0&adId=11421&zoneId=2409&viewKey=1380198076.54&tagsArray=&sessionId=efb7202b22b885ec2f7b4e0313d14749]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"firstQuartile\"><![CDATA[http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=25&time=43&protocolVersion=2.0&adId=11421&zoneId=2409&viewKey=1380198076.54&tagsArray=&sessionId=efb7202b22b885ec2f7b4e0313d14749]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"midpoint\"><![CDATA[http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=50&time=85&protocolVersion=2.0&adId=11421&zoneId=2409&viewKey=1380198076.54&tagsArray=&sessionId=efb7202b22b885ec2f7b4e0313d14749]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"thirdQuartile\"><![CDATA[http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=75&time=128&protocolVersion=2.0&adId=11421&zoneId=2409&viewKey=1380198076.54&tagsArray=&sessionId=efb7202b22b885ec2f7b4e0313d14749]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"complete\"><![CDATA[http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&displayPercentage=100&time=170&protocolVersion=2.0&adId=11421&zoneId=2409&viewKey=1380198076.54&tagsArray=&sessionId=efb7202b22b885ec2f7b4e0313d14749]]></Tracking>\r\n\t\t\t\t\t\t</TrackingEvents>\r\n\t\t\t\t\t</Linear>\r\n\t\t\t\t</Creative>\r\n\t\t\t\t\r\n\t\t\t</Creatives>\r\n\t\t\t<Extensions></Extensions>\r\n\t\t</InLine>\r\n\t</Ad></VAST>"
+    http_version: 
+  recorded_at: Thu, 26 Sep 2013 12:21:16 GMT
+recorded_with: VCR 2.6.0

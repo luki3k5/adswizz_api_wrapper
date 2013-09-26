@@ -18,11 +18,9 @@ class ApiCaller
   def initialize(options={})
     set_options!(options)
 
-    url = "http://#{subdomain}.#{BASE_URL}"
-
-    @faraday = Faraday.new(url: url) do |faraday|
+    @faraday = Faraday.new(url: "http://#{subdomain}.#{BASE_URL}") do |faraday|
       faraday.request  :url_encoded             # form-encode POST params
-      faraday.response :logger                  # log requests to STDOUT
+  #    faraday.response :logger                  # log requests to STDOUT
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
     end
   end
@@ -32,13 +30,15 @@ class ApiCaller
   end
 
   def get_ads_setup
+    ads = []
     response = faraday.get(build_uri(REQUEST_TYPES[:m1]))
     document = VAST::Document.parse(response.body)
-    puts document.inline_ads.each { |ad| Ad.new(ad) }.class
+    document.inline_ads.each { |ad| ads << Ad.new(ad) }
+    ads
   end
 
   def authenticate!
-    ## authentication happens here 
+    faraday.basic_auth(username, password)
   end
 
   def set_options!(options)

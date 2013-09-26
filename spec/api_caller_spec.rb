@@ -1,26 +1,35 @@
 require 'spec_helper'
 
 describe ApiCaller do
-  let(:api_caller) { ApiCaller.new({subdomain: 'demo', 
-                                    zone_id: '1234', 
-                                    username: 'aupeo_user', 
+  let(:api_caller) { ApiCaller.new({subdomain: 'demo',
+                                    zone_id: '2409',
+                                    username: 'aupeo_user',
                                     password: 'aupeo123'}) }
   subject { api_caller }
-
-  context 'not authenticated' do
-
-  end
 
   context 'authenticated' do
     before(:each) { api_caller.authenticate! }
 
-    describe '(M1) AdsSetup request' do
-      it 'gets the single setup Ad back' do
-        puts subject.inspect
-        VCR.use_cassette('ads_setup') do
-          puts subject.get_ads_setup.class
-  #        expect(subject.get_ads_setup.first).to eq(Ad)
+    describe '(M1) AdsSetup request', vcr: { cassette_name: 'api_calls/m1-ads-setup' } do
+      it 'gets [Ad] class back' do
+        expect(subject.get_ads_setup.first.class).to eq(Ad)
+      end
+
+      it 'has one Ad setup (test Ad)' do
+        expect(subject.get_ads_setup.size).to eq(1)
+      end
+
+      describe 'returned Ad' do
+        subject { api_caller.get_ads_setup.first }
+
+        it 'has AdTitle' do
+          expect(subject.ad_title).to eq('Ad One')
         end
+
+        it 'has AdSystem' do
+          expect(subject.ad_system).to eq('Adswizz')
+        end
+
       end
     end
 
