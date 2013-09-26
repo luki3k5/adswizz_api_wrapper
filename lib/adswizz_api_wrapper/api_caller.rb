@@ -1,5 +1,5 @@
 class ApiCaller
-  attr_accessor :faraday, :zone_id
+  attr_accessor :faraday, :subdomain, :zone_id, :username, :password
 
   PROTOCOL_VERSION = 2.0
   BASE_URL         = 'adswizz.com' 
@@ -15,11 +15,8 @@ class ApiCaller
     m9: 'ShareClicked' 
   }
 
-  def initialize(options)
-    validate_options!(options)
-
-    zone_id   = options[:zone_id] 
-    subdomain = options[:subdomain]
+  def initialize(options={})
+    set_options!(options)
 
     url = "http://#{subdomain}.#{BASE_URL}"
 
@@ -40,8 +37,19 @@ class ApiCaller
     puts document.inline_ads.each { |ad| Ad.new(ad) }.class
   end
 
+  def authenticate!
+    ## authentication happens here 
+  end
+
+  def set_options!(options)
+    validate_options!(options)
+    %w(zone_id subdomain username password).each do |el|
+      self.send("#{el}=", options[el.to_sym])
+    end
+  end
+
   def validate_options!(options)
-    %w(zone_id subdomain).each do |key|
+    %w(username password zone_id subdomain).each do |key|
       if !options.has_key?(key.to_sym)
         raise "missing option! #{key} has to be passed to #new"
       end
