@@ -18,6 +18,6 @@ describe Creative do
 
   protected
   CreativeDetails = Struct.new(:duration,
-                               :media_files,
-                               :tracking_events)
+                               :mediafiles,
+                               :tracking_urls)
 end

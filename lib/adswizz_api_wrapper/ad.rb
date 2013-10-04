@@ -4,8 +4,8 @@ class Ad
   def initialize(ad_details)
     raise "Expected VAST::InlineAd class!" if !ad_details.is_a?(VAST::InlineAd)
 
-    @ad_system   = ad_details.ad_system
-    @ad_title    = ad_details.ad_title
+    @ad_system        = ad_details.ad_system
+    @ad_title         = ad_details.ad_title
     @linear_creatives = assign_creatives(ad_details.linear_creatives)
   end
 
