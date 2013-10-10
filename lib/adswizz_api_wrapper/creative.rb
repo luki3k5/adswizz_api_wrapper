@@ -4,7 +4,7 @@ class Creative
   def initialize(creative_details, type)
     @duration        = creative_details.duration
     @mediafiles      = creative_details.mediafiles
-    @tracking_events = creative_details.tracking_urls
+    @tracking_urls   = creative_details.tracking_urls
     @type            = type
   end
 
