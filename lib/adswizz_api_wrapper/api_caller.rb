@@ -20,7 +20,7 @@ class ApiCaller
 
     @faraday = Faraday.new(url: "http://#{subdomain}.#{BASE_URL}") do |faraday|
       faraday.request  :url_encoded             # form-encode POST params
-      faraday.response :logger                  # log requests to STDOUT
+      #faraday.response :logger                  # log requests to STDOUT
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
     end
   end
@@ -51,13 +51,4 @@ class ApiCaller
       end
     end
   end
-
-  #def lower_camelize(lower_case_and_underscored_word, first_letter_in_uppercase = false)
-    #if first_letter_in_uppercase
-      #lower_case_and_underscored_word.to_s.gsub(/\/(.?)/) { "::" + $1.upcase }.gsub(/(^|_)(.)/) { $2.upcase }
-    #else
-      #lower_case_and_underscored_word[0] + camelize(lower_case_and_underscored_word, true)[1..-1]
-    #end
-  #end
-
 end

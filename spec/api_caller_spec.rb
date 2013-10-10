@@ -1,10 +1,7 @@
 require 'spec_helper'
 
 describe ApiCaller do
-  let(:api_caller) { ApiCaller.new({subdomain: 'demo',
-                                    zone_id: '2409',
-                                    username: 'aupeo_user',
-                                    password: 'aupeo123'}) }
+  let(:api_caller) { ApiCaller.new({subdomain: 'demo', zone_id: '2409' }) }
   subject { api_caller }
 
   describe '(M1) AdsSetup request', vcr: { cassette_name: 'api_calls/m1-ads-setup' } do

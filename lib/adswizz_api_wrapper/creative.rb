@@ -1,5 +1,5 @@
 class Creative
-  attr_accessor :type, :duration, :video_clicks, :mediafiles, :tracking_events
+  attr_accessor :type, :duration, :video_clicks, :mediafiles, :tracking_urls
 
   def initialize(creative_details, type)
     @duration        = creative_details.duration
