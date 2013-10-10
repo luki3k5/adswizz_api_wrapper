@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Creative do
+describe AdswizzApiWrapper::Creative do
 
   context "linear" do
     let(:creative_details) do
@@ -8,7 +8,7 @@ describe Creative do
     end
 
     describe "#creation" do
-      let(:creative) { Creative.new(creative_details, :linear)}
+      let(:creative) { AdswizzApiWrapper::Creative.new(creative_details, :linear)}
 
       it 'has duration setup' do
         expect(creative.duration).to eq('2.05')

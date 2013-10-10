@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe ApiCaller do
-  let(:api_caller) { ApiCaller.new({subdomain: 'demo', zone_id: '2409' }) }
+describe AdswizzApiWrapper::ApiCaller do
+  let(:api_caller) { AdswizzApiWrapper::ApiCaller.new({subdomain: 'demo', zone_id: '2409' }) }
   subject { api_caller }
 
   describe '(M1) AdsSetup request', vcr: { cassette_name: 'api_calls/m1-ads-setup' } do
     it 'gets [Ad] class back' do
-      expect(subject.get_ads_setup.first.class).to eq(Ad)
+      expect(subject.get_ads_setup.first.class).to eq(AdswizzApiWrapper::Ad)
     end
 
     it 'has one Ad setup (test Ad)' do
@@ -26,14 +26,15 @@ describe ApiCaller do
 
       it 'has LinearCreatives' do
         expect(subject.linear_creatives.class).to eq(Array)
-        expect(subject.linear_creatives.first.class).to eq(Creative)
+        expect(subject.linear_creatives.first.class).
+          to eq(AdswizzApiWrapper::Creative)
       end
 
       describe 'Ad has creatives' do
         subject { api_caller.get_ads_setup.first.linear_creatives.first }
 
         it 'of class Creative' do
-          expect(subject.class).to eq(Creative)
+          expect(subject.class).to eq(AdswizzApiWrapper::Creative)
         end
 
         it 'that has hash of tracking events' do
@@ -71,7 +72,7 @@ describe ApiCaller do
         subject { creative.media_files.first }
 
         it 'Creative has mediafiles' do
-          expect(subject.class).to eq(MediaFile)
+          expect(subject.class).to eq(AdswizzApiWrapper::MediaFile)
         end
 
         it 'MF has url' do

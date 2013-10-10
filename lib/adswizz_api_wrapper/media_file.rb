@@ -1,13 +1,11 @@
-class MediaFile
-  attr_accessor :url, :id, :type, :delivery, :bitrate, :width, :height
+module AdswizzApiWrapper
+  class MediaFile
+    attr_accessor :url, :id, :type, :delivery, :bitrate, :width, :height
 
-  def initialize(media_file_details)
-    @url      = media_file_details.url
-    @id       = media_file_details.id
-    @type     = media_file_details.type
-    @delivery = media_file_details.delivery
-    @bitrate  = media_file_details.bitrate
-    @width    = media_file_details.width
-    @height   = media_file_details.height
+    def initialize(media_file_details) # FIXME 
+      %w(url id type delivery bitrate width height).each do |v|
+        self.instance_variable_set("@#{v}", media_file_details.send(v.to_sym))
+      end
+    end
   end
 end
