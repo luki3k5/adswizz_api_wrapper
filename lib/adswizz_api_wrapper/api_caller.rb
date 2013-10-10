@@ -1,5 +1,5 @@
 class ApiCaller
-  attr_accessor :faraday, :subdomain, :zone_id, :username, :password
+  attr_accessor :faraday, :subdomain, :zone_id
 
   PROTOCOL_VERSION = 2.0
   BASE_URL         = 'adswizz.com' 
@@ -37,19 +37,15 @@ class ApiCaller
     ads
   end
 
-  def authenticate!
-    faraday.basic_auth(username, password)
-  end
-
   def set_options!(options)
     validate_options!(options)
-    %w(zone_id subdomain username password).each do |el|
+    %w(zone_id subdomain).each do |el|
       self.send("#{el}=", options[el.to_sym])
     end
   end
 
   def validate_options!(options)
-    %w(username password zone_id subdomain).each do |key|
+    %w(zone_id subdomain).each do |key|
       if !options.has_key?(key.to_sym)
         raise "missing option! #{key} has to be passed to #new"
       end
