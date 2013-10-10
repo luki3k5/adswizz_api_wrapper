@@ -32,12 +32,17 @@ describe ApiCaller do
       describe 'Ad has creatives' do
         subject { api_caller.get_ads_setup.first.linear_creatives.first }
 
+        it 'of class Creative' do
+          expect(subject.class).to eq(Creative)
+        end
+
         it 'that has hash of tracking events' do
           expect(subject.tracking_urls.class).to eq(Hash)
         end
 
         it 'it has event-tracking-url for :start' do
-          expect(subject.tracking_urls[:start][0].request_uri).to eq("/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=0&time=0&protocolVersion=2.0&adId=11421&zoneId=2409&viewKey=1381390933.96&tagsArray=&sessionId=1398ca87c86b674708e288a21d71b88c")
+          expect(subject.tracking_urls[:start][0].request_uri).
+            to include("AdsSendReport&displayPercentage=0")
         end
 
         it 'it has event-tracking-url for :first_quartile' do
@@ -61,8 +66,31 @@ describe ApiCaller do
         end
       end
 
-      xit 'Ad has mediafiles (in creatives)' do
-        expect(subject.linear_creatives.first.media_files).to eq("")
+      describe 'Ad has creative that has mediafiles' do
+        let!(:creative) { api_caller.get_ads_setup.first.linear_creatives.first }
+        subject { creative.media_files.first }
+
+        it 'Creative has mediafiles' do
+          expect(subject.class).to eq(MediaFile)
+        end
+
+        it 'MF has url' do
+          expect(subject.url.request_uri).
+            to eq("/demo/maid_with_the_flaxen_hair_ad_522986bc37c9c_1378453180.mp3")
+        end
+
+        it 'MF has type' do
+          expect(subject.type).to eq("audio/mpeg")
+        end
+
+        it 'MF has delivery' do
+          expect(subject.delivery).to eq("progressive")
+        end 
+
+        it 'MF has bitrate' do
+          expect(subject.bitrate).to eq(192)
+        end 
+
       end
     end
   end
