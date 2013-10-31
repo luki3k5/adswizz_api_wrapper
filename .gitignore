@@ -8,6 +8,8 @@ InstalledFiles
 _yardoc
 coverage
 doc/
+coverage
+InstalledFiles
 lib/bundler/man
 pkg
 rdoc
@@ -15,3 +17,9 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+>>>>>>> 40da5af8bd65064b34f2e40fb7b92789df9f2fcc
