@@ -10,7 +10,7 @@ describe AdswizzApiWrapper::ApiCaller do
     end
 
     it 'created extra params' do
-      options = [{ param1: 'value1'}, {param2: 'value2' }]
+      options = { param1: 'value1', param2: 'value2' }
       expect(subject.extra_parameters(options)).
         to eq("AWPARAMS=param1:value1;param2:value2;")
     end

@@ -39,10 +39,7 @@ module AdswizzApiWrapper
 
     def extra_parameters(options={})
       p = "AWPARAMS="
-      options.each do |element|
-        key = element.keys.first
-        p = "#{p}#{key}:#{element[key]};"
-      end
+      options.keys.each { |key| p = "#{p}#{key}:#{options[key]};" }
       p
     end
 
