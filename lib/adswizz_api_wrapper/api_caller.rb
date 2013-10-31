@@ -19,7 +19,7 @@ module AdswizzApiWrapper
     def initialize(options={})
       set_options!(options)
 
-      @faraday = Faraday.new(url: "http://#{subdomain}.#{BASE_URL}") do |faraday|
+      @faraday = Faraday.new(:url => "http://#{subdomain}.#{BASE_URL}") do |faraday|
         faraday.request  :url_encoded
         faraday.adapter  Faraday.default_adapter
       end
