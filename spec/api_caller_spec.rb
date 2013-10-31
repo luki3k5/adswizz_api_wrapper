@@ -1,16 +1,16 @@
 require 'spec_helper'
 
 describe AdswizzApiWrapper::ApiCaller do
-  let(:api_caller) { AdswizzApiWrapper::ApiCaller.new({subdomain: 'demo', zone_id: '2409' }) }
+  let(:api_caller) { AdswizzApiWrapper::ApiCaller.new({:subdomain => 'demo', :zone_id => '2409' }) }
   subject { api_caller }
 
-  describe '(M1) AdsSetup request', vcr: { cassette_name: 'api_calls/m1-ads-setup' } do
+  describe '(M1) AdsSetup request', :vcr => { :cassette_name => 'api_calls/m1-ads-setup' } do
     it 'gets [Ad] class back' do
       expect(subject.get_ads_setup.first.class).to eq(AdswizzApiWrapper::Ad)
     end
 
     it 'created extra params' do
-      options = { param1: 'value1', param2: 'value2' }
+      options = { :param1 => 'value1', :param2 => 'value2' }
       expect(subject.extra_parameters(options)).
         to eq("AWPARAMS=param1:value1;param2:value2;")
     end

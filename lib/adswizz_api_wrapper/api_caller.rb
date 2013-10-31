@@ -5,15 +5,15 @@ module AdswizzApiWrapper
     PROTOCOL_VERSION = 2.0
     BASE_URL         = 'adswizz.com' 
     REQUEST_TYPES    = {
-      m1: 'AdsSetup',
-      m2: 'AdsDisplayStarted',
-      m3: 'AdsSendReport',
-      m4: 'AdsDisplayEnd',
-      m5: 'AdsClicked',
-      m6: 'AdsPreviewStarted',
-      m7: 'PreviewClicked',
-      m8: 'LikeClicked',
-      m9: 'ShareClicked' 
+      :m1 => 'AdsSetup',
+      :m2 => 'AdsDisplayStarted',
+      :m3 => 'AdsSendReport',
+      :m4 => 'AdsDisplayEnd',
+      :m5 => 'AdsClicked',
+      :m6 => 'AdsPreviewStarted',
+      :m7 => 'PreviewClicked',
+      :m8 => 'LikeClicked',
+      :m9 => 'ShareClicked'
     }
 
     def initialize(options={})
