@@ -37,6 +37,15 @@ module AdswizzApiWrapper
       ads
     end
 
+    def extra_parameters(options={})
+      p = "AWPARAMS="
+      options.each do |element|
+        key = element.keys.first
+        p = "#{p}#{key}:#{element[key]};"
+      end
+      p
+    end
+
     def set_options!(options)
       validate_options!(options)
       %w(zone_id subdomain).each do |el|

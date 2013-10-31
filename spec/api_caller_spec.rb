@@ -9,6 +9,12 @@ describe AdswizzApiWrapper::ApiCaller do
       expect(subject.get_ads_setup.first.class).to eq(AdswizzApiWrapper::Ad)
     end
 
+    it 'created extra params' do
+      options = [{ param1: 'value1'}, {param2: 'value2' }]
+      expect(subject.extra_parameters(options)).
+        to eq("AWPARAMS=param1:value1;param2:value2;")
+    end
+
     it 'has one Ad setup (test Ad)' do
       expect(subject.get_ads_setup.size).to eq(1)
     end
