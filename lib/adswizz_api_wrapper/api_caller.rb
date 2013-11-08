@@ -1,9 +1,9 @@
 module AdswizzApiWrapper
   class ApiCaller
-    attr_accessor :faraday, :subdomain, :zone_id
+    attr_accessor :faraday, :subdomain, :zone_id, :extra_params
 
     PROTOCOL_VERSION = 2.0
-    BASE_URL         = 'adswizz.com' 
+    BASE_URL         = 'adswizz.com'
     REQUEST_TYPES    = {
       :m1 => 'AdsSetup',
       :m2 => 'AdsDisplayStarted',
@@ -26,7 +26,9 @@ module AdswizzApiWrapper
     end
 
     def build_uri(req_type=REQUEST_TYPES[:m1], protocol_ver=PROTOCOL_VERSION)
-      "/www/delivery/swfIndex.php?reqType=#{req_type}&protocolVersion=#{protocol_ver}&zoneId=#{zone_id}"
+      url = "/www/delivery/swfIndex.php?reqType=#{req_type}&protocolVersion=#{protocol_ver}&zoneId=#{zone_id}"
+      url = "#{url}&#{extra_parameters(extra_params)}" if !@extra_params.nil?
+      url
     end
 
     def get_ads_setup
@@ -48,6 +50,7 @@ module AdswizzApiWrapper
       %w(zone_id subdomain).each do |el|
         self.send("#{el}=", options[el.to_sym])
       end
+      @extra_params = options[:extra_options]
     end
 
     def validate_options!(options)

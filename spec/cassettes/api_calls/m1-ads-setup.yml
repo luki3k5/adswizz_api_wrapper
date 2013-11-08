@@ -71,4 +71,43 @@ http_interactions:
         event=\"complete\"><![CDATA[http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&displayPercentage=100&time=170&protocolVersion=2.0&adId=11421&zoneId=2409&viewKey=1381390933.96&tagsArray=&sessionId=1398ca87c86b674708e288a21d71b88c]]></Tracking>\r\n\t\t\t\t\t\t</TrackingEvents>\r\n\t\t\t\t\t</Linear>\r\n\t\t\t\t</Creative>\r\n\t\t\t\t\r\n\t\t\t</Creatives>\r\n\t\t\t<Extensions></Extensions>\r\n\t\t</InLine>\r\n\t</Ad></VAST>"
     http_version: 
   recorded_at: Thu, 10 Oct 2013 07:42:14 GMT
+- request:
+    method: get
+    uri: http://demo.adswizz.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Adsrv:
+      - i-a28c0def
+      Content-Type:
+      - text/html
+      Date:
+      - Fri, 08 Nov 2013 10:11:03 GMT
+      Location:
+      - http://admin.demo.adswizz.com/www/admin/index.php
+      Server:
+      - lighttpd/1.4.22
+      X-Powered-By:
+      - PHP/5.2.10-2ubuntu6.4
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 08 Nov 2013 10:11:03 GMT
 recorded_with: VCR 2.6.0
