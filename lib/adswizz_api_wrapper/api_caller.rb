@@ -18,22 +18,34 @@ module AdswizzApiWrapper
 
     def initialize(options={})
       set_options!(options)
-
-      @faraday = Faraday.new(:url => "http://#{subdomain}.#{BASE_URL}") do |faraday|
-        faraday.request  :url_encoded
-        faraday.adapter  Faraday.default_adapter
-      end
     end
 
     def build_uri(req_type=REQUEST_TYPES[:m1], protocol_ver=PROTOCOL_VERSION)
-      url = "/www/delivery/swfIndex.php?reqType=#{req_type}&protocolVersion=#{protocol_ver}&zoneId=#{zone_id}"
+      url = "http://#{subdomain}.#{BASE_URL}/www/delivery/swfIndex.php?reqType=#{req_type}&protocolVersion=#{protocol_ver}&zoneId=#{zone_id}"
       url = "#{url}&#{extra_parameters(extra_params)}" if !@extra_params.nil?
       url
     end
 
+    def adex_get_ads_setup(uri=nil)
+      ads      = []
+      uri      = build_uri(REQUEST_TYPES[:m1]) if uri == nil
+      document = VAST::Document.parse(Faraday.get(uri).body)
+
+      # if we are still receiving just references - another call (VASTAdTagURI)
+      if document.wrapper_ads.first
+        return adex_get_ads_setup(document.wrapper_ads.first.ad_tag_url)
+      end
+
+      # if this time we got ads we will parse them normally
+      if document.inline_ads
+        document.inline_ads.each { |ad| ads << Ad.new(ad) }
+        return ads
+      end
+    end
+
     def get_ads_setup
       ads = []
-      response = faraday.get(build_uri(REQUEST_TYPES[:m1]))
+      response = Faraday.get(build_uri(REQUEST_TYPES[:m1]))
       document = VAST::Document.parse(response.body)
       document.inline_ads.each { |ad| ads << Ad.new(ad) }
       ads

@@ -7,6 +7,14 @@ describe AdswizzApiWrapper::ApiCaller do
       :zone_id => '2409'
     })
   }
+
+  let(:api_caller_for_ad_exchange) {
+    AdswizzApiWrapper::ApiCaller.new({
+      :subdomain => 'exchange',
+      :zone_id => '3031'
+    })
+  }
+
   let(:api_caller_with_extra_options) { 
     AdswizzApiWrapper::ApiCaller.new({
       :subdomain     => 'demo',
@@ -20,13 +28,23 @@ describe AdswizzApiWrapper::ApiCaller do
     })
   }
 
+  context 'ad exchange call w/o extra params' do
+    subject { api_caller_for_ad_exchange }
+
+    describe '(M1) AdsSetup request', :vcr => { :cassette_name => 'api_calls/m1-ads-setup-adex' }   do
+      it 'gets [Ad] class back' do
+        expect(subject.adex_get_ads_setup.first.class).to eq(AdswizzApiWrapper::Ad)
+      end
+    end
+  end
+
   context 'with extra options' do
     subject { api_caller_with_extra_options }
 
     describe "setting up url" do
       it 'has extra params' do
         expect(subject.build_uri).
-          to eq("/www/delivery/swfIndex.php?reqType=AdsSetup&protocolVersion=2.0&zoneId=2409&AWPARAMS=region:Deutschland;user:11;user_language:german;client_app_key:1234xyz;")
+          to eq("http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSetup&protocolVersion=2.0&zoneId=2409&AWPARAMS=region:Deutschland;user:11;user_language:german;client_app_key:1234xyz;")
       end
     end
   end
