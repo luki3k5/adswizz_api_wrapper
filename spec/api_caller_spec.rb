@@ -32,8 +32,12 @@ describe AdswizzApiWrapper::ApiCaller do
     subject { api_caller_for_ad_exchange }
 
     describe '(M1) AdsSetup request', :vcr => { :cassette_name => 'api_calls/m1-ads-setup-adex' }   do
+    #describe '(M1) AdsSetup request' do
       it 'gets [Ad] class back' do
-        expect(subject.adex_get_ads_setup.first.class).to eq(AdswizzApiWrapper::Ad)
+    #    VCR.turned_off do
+    #      WebMock.allow_net_connect!
+          expect(subject.adex_get_ads_setup.first.class).to eq(AdswizzApiWrapper::Ad)
+    #    end
       end
     end
   end

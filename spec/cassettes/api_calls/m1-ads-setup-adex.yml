@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/xml; charset=UTF-8
       Date:
-      - Fri, 22 Nov 2013 14:49:07 GMT
+      - Fri, 29 Nov 2013 11:08:01 GMT
       Expires:
       - Mon, 26 Jul 1997 05:00:00 GMT
       P3p:
@@ -38,18 +38,18 @@ http_interactions:
       Server:
       - lighttpd/1.4.22
       Set-Cookie:
-      - OAGEO=PL%7C78%7CWarsaw%7C%7C52.25%7C21%7C%7C%7C%7C%7C%7C; path=/; domain=exchange.adswizz.com
-      - OAID=e11301917c7405853e4de1dae09ab869; expires=Sat, 22-Nov-2014 14:49:07 GMT;
+      - OAGEO=DE%7C16%7CBerlin%7C%7C52.5167%7C13.4%7C%7C%7C%7C%7C%7C; path=/; domain=exchange.adswizz.com
+      - OAID=7bb6c0a90f46f1eb44e47d0ec42a827f; expires=Sat, 29-Nov-2014 11:08:01 GMT;
         path=/; domain=.adswizz.com
       - OA_NO_SEQ=1; path=/; domain=exchange.adswizz.com
       - OA_SEQ_ZONES=3031; path=/; domain=exchange.adswizz.com
-      - PHPSESSID=5b494c7345e4e4e59e22ac7ea0210339; path=/
-      - adswizz_cookies_test=1; expires=Fri, 22-Nov-2013 14:49:08 GMT; path=/; domain=exchange.adswizz.com
-      - adswizz_cookies_test=deleted; expires=Thu, 22-Nov-2012 14:49:06 GMT; path=/;
+      - PHPSESSID=3e7682edfa715f887cd04610dab3eab2; path=/
+      - adswizz_cookies_test=1; expires=Fri, 29-Nov-2013 11:08:02 GMT; path=/; domain=exchange.adswizz.com
+      - adswizz_cookies_test=deleted; expires=Thu, 29-Nov-2012 11:08:00 GMT; path=/;
         domain=exchange.adswizz.com
-      - adswizz_cookies_test=deleted; expires=Thu, 22-Nov-2012 14:49:06 GMT; path=/;
+      - adswizz_cookies_test=deleted; expires=Thu, 29-Nov-2012 11:08:00 GMT; path=/;
         domain=exchange.adswizz.com
-      - sessionId=5b494c7345e4e4e59e22ac7ea0210339; path=/; domain=exchange.adswizz.com
+      - sessionId=3e7682edfa715f887cd04610dab3eab2; path=/; domain=exchange.adswizz.com
       X-Powered-By:
       - PHP/5.2.10-2ubuntu6.4
       Transfer-Encoding:
@@ -59,18 +59,18 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><VAST version=\"2.0\">\r\n\t<Ad
-        id=\"AdswizzAd3010\">\r\n\t\t<Wrapper>\r\n\t\t\t<AdSystem>Adswizz</AdSystem>\r\n\t\t\t<VASTAdTagURI><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?zoneId=603&reqType=AdsSetup&protocolVersion=2.0&sessionId=5b494c7345e4e4e59e22ac7ea0210339&context=fHI6MQ==]]></VASTAdTagURI>\r\n\t\t\t<Impression
-        id=\"AdswizzImpression\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayStarted&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131747.03&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Impression>\r\n\t\t\t\r\n\t\t\t<Creatives>\r\n\t\t\t\t<Creative>\r\n\t\t\t\t\t<Linear>\r\n\t\t\t\t\t\t<TrackingEvents>\n\t\t\t\t\t\t\t<Tracking
-        event=\"start\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=0&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131747.03&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"firstQuartile\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=25&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131747.03&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"midpoint\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=50&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131747.03&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"thirdQuartile\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=75&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131747.03&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"complete\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&displayPercentage=100&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131747.03&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\r\n\t\t\t\t\t\t</TrackingEvents>\r\n\t\t\t\t\t\t<VideoClicks>\r\n\t\t\t\t\t\t\t<ClickTracking><![CDATA[http://exchange.adswizz.com/www/delivery/ck.php?oaparams=2__bannerid=3010__zoneid=3031__cb=5a50f5d75c__viewkey=1385131747.03__maxdest=]]></ClickTracking>\r\n\t\t\t\t\t\t</VideoClicks>\r\n\t\t\t\t\t</Linear>\r\n\t\t\t\t</Creative>\r\n\t\t\t</Creatives>\r\n\t\t\t<Extensions>\r\n\t\t\t\r\n\t\t\t</Extensions>\r\n\t\t</Wrapper>\r\n\t</Ad></VAST>"
+        id=\"AdswizzAd3010\">\r\n\t\t<Wrapper>\r\n\t\t\t<AdSystem>Adswizz</AdSystem>\r\n\t\t\t<VASTAdTagURI><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?zoneId=603&reqType=AdsSetup&protocolVersion=2.0&sessionId=3e7682edfa715f887cd04610dab3eab2&context=fHI6MQ==]]></VASTAdTagURI>\r\n\t\t\t<Impression
+        id=\"AdswizzImpression\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayStarted&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385723281.2&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Impression>\r\n\t\t\t\r\n\t\t\t<Creatives>\r\n\t\t\t\t<Creative>\r\n\t\t\t\t\t<Linear>\r\n\t\t\t\t\t\t<TrackingEvents>\n\t\t\t\t\t\t\t<Tracking
+        event=\"start\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=0&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385723281.2&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"firstQuartile\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=25&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385723281.2&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"midpoint\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=50&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385723281.2&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"thirdQuartile\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=75&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385723281.2&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"complete\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&displayPercentage=100&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385723281.2&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\r\n\t\t\t\t\t\t</TrackingEvents>\r\n\t\t\t\t\t\t<VideoClicks>\r\n\t\t\t\t\t\t\t<ClickTracking><![CDATA[http://exchange.adswizz.com/www/delivery/ck.php?oaparams=2__bannerid=3010__zoneid=3031__cb=1713815043__viewkey=1385723281.2__maxdest=]]></ClickTracking>\r\n\t\t\t\t\t\t</VideoClicks>\r\n\t\t\t\t\t</Linear>\r\n\t\t\t\t</Creative>\r\n\t\t\t</Creatives>\r\n\t\t\t<Extensions>\r\n\t\t\t\r\n\t\t\t</Extensions>\r\n\t\t</Wrapper>\r\n\t</Ad></VAST>"
     http_version: 
-  recorded_at: Fri, 22 Nov 2013 14:49:07 GMT
+  recorded_at: Fri, 29 Nov 2013 11:08:01 GMT
 - request:
     method: get
-    uri: http://exchange.adswizz.com/www/delivery/swfIndex.php?protocolVersion=2.0&reqType=AdsSetup&zoneId=3031
+    uri: http://france.adswizz.com/www/delivery/swfIndex.php?context=fHI6MQ==&protocolVersion=2.0&reqType=AdsSetup&sessionId=3e7682edfa715f887cd04610dab3eab2&zoneId=603
     body:
       encoding: US-ASCII
       string: ''
@@ -89,35 +89,35 @@ http_interactions:
       Access-Control-Allow-Origin:
       - '*'
       Adsrv:
-      - i-453baa0a
+      - i-af867ee1
       Cache-Control:
       - private, max-age=0, no-cache
       Content-Type:
       - application/xml; charset=UTF-8
       Date:
-      - Fri, 22 Nov 2013 14:49:49 GMT
+      - Fri, 29 Nov 2013 11:08:01 GMT
       Expires:
       - Mon, 26 Jul 1997 05:00:00 GMT
       P3p:
-      - policyref="exchange.adswizz.com/docs/adswizz_adserver.htm",  CP="CUR OUR NAV
+      - policyref="france.adswizz.com/docs/adswizz_adserver.htm",  CP="CUR OUR NAV
         INT IND"
       Pragma:
       - no-cache
       Server:
       - lighttpd/1.4.22
       Set-Cookie:
-      - OAGEO=PL%7C78%7CWarsaw%7C%7C52.25%7C21%7C%7C%7C%7C%7C%7C; path=/; domain=exchange.adswizz.com
-      - OAID=37ee733f08c8d108315a1df3f381189a; expires=Sat, 22-Nov-2014 14:49:48 GMT;
+      - OAGEO=DE%7C16%7CBerlin%7C%7C52.5167%7C13.4%7C%7C%7C%7C%7C%7C; path=/; domain=france.adswizz.com
+      - OAID=c1ebbd875723b9e26d8e742e7ce38d0a; expires=Sat, 29-Nov-2014 11:08:01 GMT;
         path=/; domain=.adswizz.com
-      - OA_NO_SEQ=1; path=/; domain=exchange.adswizz.com
-      - OA_SEQ_ZONES=3031; path=/; domain=exchange.adswizz.com
-      - PHPSESSID=c6a7a3355b0f12481937b38b8011bf42; path=/
-      - adswizz_cookies_test=1; expires=Fri, 22-Nov-2013 14:49:49 GMT; path=/; domain=exchange.adswizz.com
-      - adswizz_cookies_test=deleted; expires=Thu, 22-Nov-2012 14:49:47 GMT; path=/;
-        domain=exchange.adswizz.com
-      - adswizz_cookies_test=deleted; expires=Thu, 22-Nov-2012 14:49:47 GMT; path=/;
-        domain=exchange.adswizz.com
-      - sessionId=c6a7a3355b0f12481937b38b8011bf42; path=/; domain=exchange.adswizz.com
+      - OA_NO_SEQ=1; path=/; domain=france.adswizz.com
+      - OA_SEQ_ZONES=603; path=/; domain=france.adswizz.com
+      - PHPSESSID=3e7682edfa715f887cd04610dab3eab2; path=/
+      - adswizz_cookies_test=1; expires=Fri, 29-Nov-2013 11:08:02 GMT; path=/; domain=france.adswizz.com
+      - adswizz_cookies_test=deleted; expires=Thu, 29-Nov-2012 11:08:00 GMT; path=/;
+        domain=france.adswizz.com
+      - adswizz_cookies_test=deleted; expires=Thu, 29-Nov-2012 11:08:00 GMT; path=/;
+        domain=france.adswizz.com
+      - sessionId=3e7682edfa715f887cd04610dab3eab2; path=/; domain=france.adswizz.com
       X-Powered-By:
       - PHP/5.2.10-2ubuntu6.4
       Transfer-Encoding:
@@ -127,18 +127,18 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><VAST version=\"2.0\">\r\n\t<Ad
-        id=\"AdswizzAd3010\">\r\n\t\t<Wrapper>\r\n\t\t\t<AdSystem>Adswizz</AdSystem>\r\n\t\t\t<VASTAdTagURI><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?zoneId=603&reqType=AdsSetup&protocolVersion=2.0&sessionId=c6a7a3355b0f12481937b38b8011bf42&context=fHI6MQ==]]></VASTAdTagURI>\r\n\t\t\t<Impression
-        id=\"AdswizzImpression\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayStarted&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131789.01&tagsArray=&sessionId=c6a7a3355b0f12481937b38b8011bf42]]></Impression>\r\n\t\t\t\r\n\t\t\t<Creatives>\r\n\t\t\t\t<Creative>\r\n\t\t\t\t\t<Linear>\r\n\t\t\t\t\t\t<TrackingEvents>\n\t\t\t\t\t\t\t<Tracking
-        event=\"start\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=0&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131789.01&tagsArray=&sessionId=c6a7a3355b0f12481937b38b8011bf42]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"firstQuartile\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=25&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131789.01&tagsArray=&sessionId=c6a7a3355b0f12481937b38b8011bf42]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"midpoint\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=50&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131789.01&tagsArray=&sessionId=c6a7a3355b0f12481937b38b8011bf42]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"thirdQuartile\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=75&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131789.01&tagsArray=&sessionId=c6a7a3355b0f12481937b38b8011bf42]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"complete\"><![CDATA[http://exchange.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&displayPercentage=100&protocolVersion=2.0&adId=3010&zoneId=3031&viewKey=1385131789.01&tagsArray=&sessionId=c6a7a3355b0f12481937b38b8011bf42]]></Tracking>\r\n\t\t\t\t\t\t</TrackingEvents>\r\n\t\t\t\t\t\t<VideoClicks>\r\n\t\t\t\t\t\t\t<ClickTracking><![CDATA[http://exchange.adswizz.com/www/delivery/ck.php?oaparams=2__bannerid=3010__zoneid=3031__cb=a6121ea0a7__viewkey=1385131789.01__maxdest=]]></ClickTracking>\r\n\t\t\t\t\t\t</VideoClicks>\r\n\t\t\t\t\t</Linear>\r\n\t\t\t\t</Creative>\r\n\t\t\t</Creatives>\r\n\t\t\t<Extensions>\r\n\t\t\t\r\n\t\t\t</Extensions>\r\n\t\t</Wrapper>\r\n\t</Ad></VAST>"
+        id=\"AdswizzAd1404\">\r\n\t\t<Wrapper>\r\n\t\t\t<AdSystem>Adswizz</AdSystem>\r\n\t\t\t<VASTAdTagURI><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?zoneId=622&reqType=AdsSetup&protocolVersion=2.0&sessionId=3e7682edfa715f887cd04610dab3eab2&context=fHI6MTt8cjox]]></VASTAdTagURI>\r\n\t\t\t<Impression
+        id=\"AdswizzImpression\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayStarted&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385723281.53&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Impression>\r\n\t\t\t\r\n\t\t\t<Creatives>\r\n\t\t\t\t<Creative>\r\n\t\t\t\t\t<Linear>\r\n\t\t\t\t\t\t<TrackingEvents>\n\t\t\t\t\t\t\t<Tracking
+        event=\"start\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=0&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385723281.53&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"firstQuartile\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=25&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385723281.53&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"midpoint\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=50&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385723281.53&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"thirdQuartile\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=75&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385723281.53&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"complete\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&displayPercentage=100&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385723281.53&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\r\n\t\t\t\t\t\t</TrackingEvents>\r\n\t\t\t\t\t\t<VideoClicks>\r\n\t\t\t\t\t\t\t<ClickTracking><![CDATA[http://france.adswizz.com/www/delivery/ck.php?oaparams=2__bannerid=1404__zoneid=603__cb=d02acf2cf3__viewkey=1385723281.53__maxdest=]]></ClickTracking>\r\n\t\t\t\t\t\t</VideoClicks>\r\n\t\t\t\t\t</Linear>\r\n\t\t\t\t</Creative>\r\n\t\t\t</Creatives>\r\n\t\t\t<Extensions>\r\n\t\t\t\r\n\t\t\t</Extensions>\r\n\t\t</Wrapper>\r\n\t</Ad></VAST>"
     http_version: 
-  recorded_at: Fri, 22 Nov 2013 14:49:49 GMT
+  recorded_at: Fri, 29 Nov 2013 11:08:01 GMT
 - request:
     method: get
-    uri: http://france.adswizz.com/www/delivery/swfIndex.php?context=fHI6MQ==&protocolVersion=2.0&reqType=AdsSetup&sessionId=5b494c7345e4e4e59e22ac7ea0210339&zoneId=603
+    uri: http://havas.adswizz.com/www/delivery/swfIndex.php?context=fHI6MTt8cjox&protocolVersion=2.0&reqType=AdsSetup&sessionId=3e7682edfa715f887cd04610dab3eab2&zoneId=622
     body:
       encoding: US-ASCII
       string: ''
@@ -163,75 +163,7 @@ http_interactions:
       Content-Type:
       - application/xml; charset=UTF-8
       Date:
-      - Mon, 25 Nov 2013 11:32:00 GMT
-      Expires:
-      - Mon, 26 Jul 1997 05:00:00 GMT
-      P3p:
-      - policyref="france.adswizz.com/docs/adswizz_adserver.htm",  CP="CUR OUR NAV
-        INT IND"
-      Pragma:
-      - no-cache
-      Server:
-      - lighttpd/1.4.22
-      Set-Cookie:
-      - OAGEO=DE%7C16%7CBerlin%7C%7C52.5167%7C13.4%7C%7C%7C%7C%7C%7C; path=/; domain=france.adswizz.com
-      - OAID=14d6f909624b38b79d50a44e20a74e4e; expires=Tue, 25-Nov-2014 11:32:00 GMT;
-        path=/; domain=.adswizz.com
-      - OA_NO_SEQ=1; path=/; domain=france.adswizz.com
-      - OA_SEQ_ZONES=603; path=/; domain=france.adswizz.com
-      - PHPSESSID=5b494c7345e4e4e59e22ac7ea0210339; path=/
-      - adswizz_cookies_test=1; expires=Mon, 25-Nov-2013 11:32:01 GMT; path=/; domain=france.adswizz.com
-      - adswizz_cookies_test=deleted; expires=Sun, 25-Nov-2012 11:31:59 GMT; path=/;
-        domain=france.adswizz.com
-      - adswizz_cookies_test=deleted; expires=Sun, 25-Nov-2012 11:31:59 GMT; path=/;
-        domain=france.adswizz.com
-      - sessionId=5b494c7345e4e4e59e22ac7ea0210339; path=/; domain=france.adswizz.com
-      X-Powered-By:
-      - PHP/5.2.10-2ubuntu6.4
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><VAST version=\"2.0\">\r\n\t<Ad
-        id=\"AdswizzAd1404\">\r\n\t\t<Wrapper>\r\n\t\t\t<AdSystem>Adswizz</AdSystem>\r\n\t\t\t<VASTAdTagURI><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?zoneId=622&reqType=AdsSetup&protocolVersion=2.0&sessionId=5b494c7345e4e4e59e22ac7ea0210339&context=fHI6MTt8cjox]]></VASTAdTagURI>\r\n\t\t\t<Impression
-        id=\"AdswizzImpression\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayStarted&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385379120.81&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Impression>\r\n\t\t\t\r\n\t\t\t<Creatives>\r\n\t\t\t\t<Creative>\r\n\t\t\t\t\t<Linear>\r\n\t\t\t\t\t\t<TrackingEvents>\n\t\t\t\t\t\t\t<Tracking
-        event=\"start\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=0&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385379120.81&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"firstQuartile\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=25&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385379120.81&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"midpoint\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=50&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385379120.81&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"thirdQuartile\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=75&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385379120.81&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"complete\"><![CDATA[http://france.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&displayPercentage=100&protocolVersion=2.0&adId=1404&zoneId=603&viewKey=1385379120.81&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\r\n\t\t\t\t\t\t</TrackingEvents>\r\n\t\t\t\t\t\t<VideoClicks>\r\n\t\t\t\t\t\t\t<ClickTracking><![CDATA[http://france.adswizz.com/www/delivery/ck.php?oaparams=2__bannerid=1404__zoneid=603__cb=cdc06c38e0__viewkey=1385379120.81__maxdest=]]></ClickTracking>\r\n\t\t\t\t\t\t</VideoClicks>\r\n\t\t\t\t\t</Linear>\r\n\t\t\t\t</Creative>\r\n\t\t\t</Creatives>\r\n\t\t\t<Extensions>\r\n\t\t\t\r\n\t\t\t</Extensions>\r\n\t\t</Wrapper>\r\n\t</Ad></VAST>"
-    http_version: 
-  recorded_at: Mon, 25 Nov 2013 11:32:00 GMT
-- request:
-    method: get
-    uri: http://havas.adswizz.com/www/delivery/swfIndex.php?context=fHI6MTt8cjox&protocolVersion=2.0&reqType=AdsSetup&sessionId=5b494c7345e4e4e59e22ac7ea0210339&zoneId=622
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.8.8
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - '*/*'
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Access-Control-Allow-Origin:
-      - '*'
-      Adsrv:
-      - i-a28c0def
-      Cache-Control:
-      - private, max-age=0, no-cache
-      Content-Type:
-      - application/xml; charset=UTF-8
-      Date:
-      - Mon, 25 Nov 2013 11:41:02 GMT
+      - Fri, 29 Nov 2013 11:08:01 GMT
       Expires:
       - Mon, 26 Jul 1997 05:00:00 GMT
       P3p:
@@ -243,21 +175,21 @@ http_interactions:
       - lighttpd/1.4.22
       Set-Cookie:
       - OAGEO=DE%7C16%7CBerlin%7C%7C52.5167%7C13.4%7C%7C%7C%7C%7C%7C; path=/; domain=havas.adswizz.com
-      - OAID=ebb25f7972587852369941f7df9c7fb8; expires=Tue, 25-Nov-2014 11:41:02 GMT;
+      - OAID=9931c73dbcee42d9e2f57818e381d653; expires=Sat, 29-Nov-2014 11:08:01 GMT;
         path=/; domain=.adswizz.com
       - OA_NO_SEQ=1; path=/; domain=havas.adswizz.com
       - OA_SEQ_ZONES=622; path=/; domain=havas.adswizz.com
-      - PHPSESSID=5b494c7345e4e4e59e22ac7ea0210339; path=/
-      - adswizz_cookies_test=1; expires=Mon, 25-Nov-2013 11:41:03 GMT; path=/; domain=havas.adswizz.com
-      - adswizz_cookies_test=deleted; expires=Sun, 25-Nov-2012 11:41:01 GMT; path=/;
+      - PHPSESSID=3e7682edfa715f887cd04610dab3eab2; path=/
+      - adswizz_cookies_test=1; expires=Fri, 29-Nov-2013 11:08:02 GMT; path=/; domain=havas.adswizz.com
+      - adswizz_cookies_test=deleted; expires=Thu, 29-Nov-2012 11:08:00 GMT; path=/;
         domain=havas.adswizz.com
-      - adswizz_cookies_test=deleted; expires=Sun, 25-Nov-2012 11:41:01 GMT; path=/;
+      - adswizz_cookies_test=deleted; expires=Thu, 29-Nov-2012 11:08:00 GMT; path=/;
         domain=havas.adswizz.com
-      - sessionId=5b494c7345e4e4e59e22ac7ea0210339; path=/; domain=havas.adswizz.com
+      - sessionId=3e7682edfa715f887cd04610dab3eab2; path=/; domain=havas.adswizz.com
       X-Powered-By:
       - PHP/5.2.10-2ubuntu6.4
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '3043'
       Connection:
       - keep-alive
     body:
@@ -265,16 +197,16 @@ http_interactions:
       string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><VAST version=\"2.0\">\r\n\t<Ad
         id=\"AdswizzAd1913\">\r\n\t\t<InLine>\r\n\t\t\t<AdSystem>Adswizz</AdSystem>\r\n\t\t\t<AdTitle>Audio
         1 - Aupeo</AdTitle>\r\n\t\t\t<Description>Audio 1 - Aupeo</Description>\r\n\t\t\t<Impression
-        id=\"AdswizzImpression\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayStarted&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385379662.59&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Impression>\r\n\t\t\t\r\n\t\t\t<Creatives>\r\n\t\t\t\t<Creative
-        sequence=\"1\">\r\n\t\t\t\t\t<Linear>\r\n\t\t\t\t\t\t<Duration>00:00:30</Duration><VideoClicks><ClickThrough><![CDATA[http://havas.adswizz.com/www/delivery/ck.php?oaparams=2__bannerid=1913__zoneid=622__cb=d962ad8da9__viewkey=1385379662.59__maxdest=]]></ClickThrough><CustomClick><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsClicked&protocolVersion=2.0&clickX=[clickX]&clickY=[clickY]&time=[timestamp]&adId=1913&visitorCookieSend=ebb25f7972587852369941f7df9c7fb8&zoneId=622&viewKey=1385379662.59&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339&cb=[random]]]></CustomClick></VideoClicks>\r\n\t\t\t\t\t\t<MediaFiles>\r\n\t\t\t\t\t\t\t<MediaFile
+        id=\"AdswizzImpression\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayStarted&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385723281.88&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Impression>\r\n\t\t\t\r\n\t\t\t<Creatives>\r\n\t\t\t\t<Creative
+        sequence=\"1\">\r\n\t\t\t\t\t<Linear>\r\n\t\t\t\t\t\t<Duration>00:00:30</Duration><VideoClicks><ClickThrough><![CDATA[http://havas.adswizz.com/www/delivery/ck.php?oaparams=2__bannerid=1913__zoneid=622__cb=29d39ee3cb__viewkey=1385723281.88__maxdest=]]></ClickThrough><CustomClick><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsClicked&protocolVersion=2.0&clickX=[clickX]&clickY=[clickY]&time=[timestamp]&adId=1913&visitorCookieSend=9931c73dbcee42d9e2f57818e381d653&zoneId=622&viewKey=1385723281.88&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2&cb=[random]]]></CustomClick></VideoClicks>\r\n\t\t\t\t\t\t<MediaFiles>\r\n\t\t\t\t\t\t\t<MediaFile
         delivery=\"progressive\" bitrate=\"128\" width=\"0\" height=\"0\" type=\"audio/mpeg\"><![CDATA[http://delivery-s3.adswizz.com/havas/_ford_fiesta_bonus_sans_cond_30sec_m1_ad_528a14c2c9897_1384780994.mp3]]></MediaFile>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t</MediaFiles>\r\n\t\t\t\t\t\t<TrackingEvents>\n\t\t\t\t\t\t\t<Tracking
-        event=\"start\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=0&time=0&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385379662.59&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"firstQuartile\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=25&time=8&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385379662.59&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"midpoint\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=50&time=15&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385379662.59&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"thirdQuartile\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=75&time=23&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385379662.59&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
-        event=\"complete\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&displayPercentage=100&time=30&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385379662.59&tagsArray=&sessionId=5b494c7345e4e4e59e22ac7ea0210339]]></Tracking>\r\n\t\t\t\t\t\t</TrackingEvents>\r\n\t\t\t\t\t</Linear>\r\n\t\t\t\t</Creative>\r\n\t\t\t\t\r\n\t\t\t</Creatives>\r\n\t\t\t<Extensions>\r\n\t\t\t
+        event=\"start\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=0&time=0&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385723281.88&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"firstQuartile\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=25&time=8&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385723281.88&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"midpoint\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=50&time=15&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385723281.88&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"thirdQuartile\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSendReport&displayPercentage=75&time=23&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385723281.88&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\n\t\t\t\t\t\t\t<Tracking
+        event=\"complete\"><![CDATA[http://havas.adswizz.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&displayPercentage=100&time=30&protocolVersion=2.0&adId=1913&zoneId=622&viewKey=1385723281.88&tagsArray=&sessionId=3e7682edfa715f887cd04610dab3eab2]]></Tracking>\r\n\t\t\t\t\t\t</TrackingEvents>\r\n\t\t\t\t\t</Linear>\r\n\t\t\t\t</Creative>\r\n\t\t\t\t\r\n\t\t\t</Creatives>\r\n\t\t\t<Extensions>\r\n\t\t\t
         \ <Extension type=\"AdServer\">\r\n\t\t\t\t<AdContext>fHI6MTt8cjoxXnI6MXxe</AdContext>\r\n\t\t\t
         \ </Extension>\r\n\t\t\t  </Extensions>\r\n\t\t</InLine>\r\n\t</Ad></VAST>"
     http_version: 
-  recorded_at: Mon, 25 Nov 2013 11:41:02 GMT
+  recorded_at: Fri, 29 Nov 2013 11:08:01 GMT
 recorded_with: VCR 2.6.0
