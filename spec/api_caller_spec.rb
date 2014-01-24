@@ -48,7 +48,7 @@ describe AdswizzApiWrapper::ApiCaller do
     describe "setting up url" do
       it 'has extra params' do
         expect(subject.build_uri).
-          to eq("http://demo.adswizz.com/www/delivery/swfIndex.php?reqType=AdsSetup&protocolVersion=2.0&zoneId=2409&AWPARAMS=region:Deutschland;user:11;user_language:german;client_app_key:1234xyz;")
+          to eq("/www/delivery/swfIndex.php?reqType=AdsSetup&protocolVersion=2.0&zoneId=2409&AWPARAMS=region:Deutschland;user:11;user_language:german;client_app_key:1234xyz;")
       end
     end
   end
