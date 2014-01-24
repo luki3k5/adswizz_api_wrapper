@@ -23,13 +23,12 @@ module AdswizzApiWrapper
       @client_locale_and_lang ||= 'de-de'
       @faraday = Faraday.new(:url => "http://#{subdomain}.#{BASE_URL}") do |f|
         f.request  :url_encoded             # form-encode POST params
-        f.response :logger                  # log requests to STDOUT
+#        f.response :logger                  # log requests to STDOUT
         f.adapter  Faraday.default_adapter  # make requests with Net::HTTP
       end
     end
 
     def build_uri(req_type=REQUEST_TYPES[:m1], protocol_ver=PROTOCOL_VERSION)
-      #url = "http://#{subdomain}.#{BASE_URL}/www/delivery/swfIndex.php?reqType=#{req_type}&protocolVersion=#{protocol_ver}&zoneId=#{zone_id}"
       url = "/www/delivery/swfIndex.php?reqType=#{req_type}&protocolVersion=#{protocol_ver}&zoneId=#{zone_id}"
       url = "#{url}&#{extra_parameters(extra_params)}" if !@extra_params.nil?
       url
@@ -38,7 +37,6 @@ module AdswizzApiWrapper
     def adex_get_ads_setup(uri=nil)
       ads      = []
       uri      = build_uri(REQUEST_TYPES[:m1]) if uri == nil
-      puts "faraday is #{@faraday.inspect}"
       response = @faraday.get do |req|
         req.url uri
         req.headers = { "Accept-Language" => client_locale_and_lang }
@@ -76,7 +74,7 @@ module AdswizzApiWrapper
 
     def set_options!(options)
       validate_options!(options)
-      %w(zone_id subdomain).each do |el|
+      %w(zone_id subdomain client_locale_and_lang).each do |el|
         self.send("#{el}=", options[el.to_sym])
       end
       @extra_params = options[:extra_options]
