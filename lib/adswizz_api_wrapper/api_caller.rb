@@ -57,7 +57,7 @@ module AdswizzApiWrapper
 
     def get_ads_setup
       ads = []
-      response = @faraday.get do |req| 
+      response = @faraday.get do |req|
         req.url build_uri(REQUEST_TYPES[:m1])
         req.headers = { "Accept-Language" => client_locale_and_lang }
       end
